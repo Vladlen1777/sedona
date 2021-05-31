@@ -7,8 +7,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     />
-    <link href="normalize.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="Favicon/152.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="favicon/180.png" />
@@ -19,7 +19,7 @@
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img
-            src="logo-sedona.svg"
+            src="images/logo-sedona.svg"
             width="138"
             height="70"
             alt="Логотип города Седона"
@@ -57,18 +57,18 @@
         <label for="check1">Апартаменты</label>
       </fieldset>
       <fieldset class="features-list">
-        <legend>Стоимость в сутки, ₽:</legend>
+        <legend>СТОИМОСТЬ В СУТКИ, ₽:</legend>
         <label>от</label>
-        <input class="features-input-1" type="text" value="0" />
+        <input class="features-input" type="text" value="0" />
         <label>До</label>
-        <input class="features-input-1" type="text" value="3000" />
-        <button class="features-button" type="submit">Показать</button>
+        <input class="features-input" type="text" value="3000" />
+        <button class="features-button" type="submit">ПОКАЗАТЬ</button>
       </fieldset>
     </form>
     <section>
       <ul class="items">
         <li>Найдено: 3</li>
-        <li>Сортировка:</li>
+        <li class="sort">Сортировка:</li>
         <li class="price"><a href="#">По цене</a></li>
         <li class="type"><a href="#">По типу</a></li>
         <li class="rating"><a href="#">По рейтингу</a></li>
@@ -78,7 +78,7 @@
           <a href="amara.html">
             <p>
               <img
-                src="amara.jpg"
+                src="images/amara.jpg"
                 width="135"
                 height="90"
                 align="left"
@@ -88,18 +88,18 @@
             <h2>Amara Resort & Spa</h2>
           </a>
           <span>Гостиница</span>
-          <button class="detailed" type="submit">Подробнее</button>
+          <button class="detailed" type="submit">ПОДРОБНЕЕ</button>
           <span>От 4000 ₽</span>
-          <button class="book" type="submit">Забронировать</button>
-          <span>Рейтинг: 8,5</span>
+          <button class="book" type="submit">ЗАБРОНИРОВАТЬ</button>
+          <span class="rait">Рейтинг: 8,5</span>
         </li>
       </ul>
-      <ul class="items">
+      <ul class="hotel">
         <li class="hotel-item">
           <a href="desert.html">
             <p>
               <img
-                src="desert.jpg"
+                src="images/desert.jpg"
                 width="135"
                 height="90"
                 align="left"
@@ -109,18 +109,18 @@
             <h2>Desert Quail Inn</h2>
           </a>
           <span>Мотель</span>
-          <button class="detailed" type="submit">Подробнее</button>
+          <button class="detailed" type="submit">ПОДРОБНЕЕ</button>
           <span>От 3000 ₽</span>
-          <button class="book" type="submit">Забронировать</button>
-          <span>Рейтинг: 8,9</span>
+          <button class="book" type="submit">ЗАБРОНИРОВАТЬ</button>
+          <span class="rait">Рейтинг: 8,9</span>
         </li>
       </ul>
-      <ul class="items">
+      <ul class="hotel">
         <li class="hotel-item">
           <a href="villas.html">
             <p>
               <img
-                src="villas.jpg"
+                src="images/villas.jpg"
                 width="135"
                 height="90"
                 align="left"
@@ -130,10 +130,10 @@
             <h2>Villas at Poco Diablo</h2>
           </a>
           <span>Апартаменты</span>
-          <button class="detailed" type="submit">Подробнее</button>
+          <button class="detailed" type="submit">ПОДРОБНЕЕ</button>
           <span>От 2000 ₽</span>
-          <button class="book" type="submit">Забронировать</button>
-          <span>Рейтинг: 9,2</span>
+          <button class="book" type="submit">ЗАБРОНИРОВАТЬ</button>
+          <span class="rait">Рейтинг: 9,2</span>
         </li>
       </ul>
     </section>
@@ -156,7 +156,7 @@
       <section class="author">
         <p>Website by</p>
         <img
-          src="logo-htmlacademy.svg"
+          src="images/logo-htmlacademy.svg"
           width="115"
           height="33"
           alt="Логотип академии"

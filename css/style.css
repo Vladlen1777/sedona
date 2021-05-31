@@ -1,0 +1,365 @@
+:root {
+  --basic-white: #ffffff;
+  --basic-blue: #81b3d2;
+  --basic-black: #000000;
+  --basic-grey: #eeeeee;
+  --basic-light-grey: #333333;
+  --basic-brown: #766357;
+  --basic-extra-white: #f2f2f2;
+  --basic-extra-grey: #a9a9a9;
+}
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  background-color: var(--basic-white);
+  text-transform: uppercase;
+  background-image: url("background-index.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-extra-white);
+}
+
+.image {
+  text-align: center;
+  background-image: url("background-index.jpg");
+}
+
+.slogan h1 {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: var(--basic-black);
+  list-style: none;
+}
+
+.slogan p {
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: var(--basic-light-grey);
+  list-style: none;
+}
+
+.description {
+  background-color: var(--basic-blue);
+  height: 256px;
+  width: 400px;
+  left: 40.000000000000455px;
+  top: 780px;
+  border-radius: 0px;
+}
+
+.description h2 {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: var(--basic-white);
+}
+
+.description-excerpt {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+  list-style: none;
+  color: var(--basic-white);
+}
+.description-excerpt img {
+  background-image: url("advantages-1.jpg");
+  height: 256px;
+  width: 800px;
+  left: 440px;
+  top: 780px;
+  border-radius: 0px;
+  list-style: none;
+}
+
+.advantages-text h2 {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0px;
+  list-style: none;
+  color: var(--basic-black);
+}
+
+.advantages-text p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  list-style: none;
+  color: var(--basic-light-grey);
+}
+
+.advantages {
+  list-style: none;
+  text-align: center;
+  background-color: var(--basic-extra-grey);
+}
+
+.snippet h2 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.snippet p {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.button {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+  margin-left: 40%;
+}
+
+.footer {
+  text-align: center;
+}
+
+.map {
+  height: 594px;
+  width: 1199px;
+  left: 41.000000000000455px;
+  top: 2169px;
+  border-radius: 0px;
+}
+
+.visit a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.visit p {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.author p {
+  color: var(--basic-black);
+}
+
+.socials a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.features {
+  background-image: url("images/background-catalog.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features-list legend {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--basic-white);
+}
+
+.features-list label {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--basic-white);
+}
+
+.features-input {
+  height: 23px;
+  width: 23px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  color: var(--basic-white);
+}
+
+.features-button {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--basic-white);
+  border: 2px solid var(--basic-white);
+  background: none;
+}
+
+.items {
+  list-style: none;
+}
+
+.items li {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--basic-black);
+}
+
+.sort {
+  font: inherit;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--basic-black);
+}
+
+.price a {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--basic-blue);
+}
+
+.type a {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--basic-black);
+  border-bottom: 1px dashed var(--basic-blue);
+  opacity: 0.3;
+}
+
+.rating a {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--basic-black);
+  border-bottom: 1px dashed var(--basic-blue);
+  opacity: 0.3;
+}
+
+.hotel {
+  list-style: none;
+}
+
+.hotel h2 {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--basic-black);
+}
+
+.hotel span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--basic-light-grey);
+}
+
+.detailed {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.book {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+
+.rait {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #666666;
+  background-color: var(--basic-extra-white);
+}
