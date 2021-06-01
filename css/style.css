@@ -43,12 +43,13 @@ a {
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-  background-color: var(--basic-extra-white);
+  color: var(--basic-extra-white);
 }
 
 .image {
   text-align: center;
-  background-image: url("background-index.jpg");
+  background-image: url("../images/background-index.jpg");
+  background-size: cover;
 }
 
 .slogan h1 {
@@ -63,7 +64,6 @@ a {
 }
 
 .slogan p {
-  font-family: PT Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -78,7 +78,7 @@ a {
   background-color: var(--basic-blue);
   height: 256px;
   width: 400px;
-  left: 40.000000000000455px;
+  left: 40px;
   top: 780px;
   border-radius: 0px;
 }
@@ -93,7 +93,7 @@ a {
   color: var(--basic-white);
 }
 
-.description-excerpt {
+.description-desc {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -102,15 +102,6 @@ a {
   text-align: center;
   list-style: none;
   color: var(--basic-white);
-}
-.description-excerpt img {
-  background-image: url("advantages-1.jpg");
-  height: 256px;
-  width: 800px;
-  left: 440px;
-  top: 780px;
-  border-radius: 0px;
-  list-style: none;
 }
 
 .advantages-text h2 {
@@ -121,6 +112,7 @@ a {
   letter-spacing: 0px;
   list-style: none;
   color: var(--basic-black);
+  margin: 0;
 }
 
 .advantages-text p {
@@ -131,12 +123,19 @@ a {
   letter-spacing: 0px;
   list-style: none;
   color: var(--basic-light-grey);
+  margin: 0;
 }
 
-.advantages {
+.advantages-1 {
+  list-style: none;
+  text-align: center;
+}
+
+.advantages-2 {
   list-style: none;
   text-align: center;
   background-color: var(--basic-extra-grey);
+  margin: 0;
 }
 
 .snippet h2 {
@@ -149,13 +148,17 @@ a {
 }
 
 .snippet p {
-  font-family: Roboto;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0px;
   text-align: center;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--basic-extra-white);
 }
 
 .button {
@@ -167,7 +170,9 @@ a {
   text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-brown);
-  margin-left: 40%;
+  margin-left: 30%;
+  width: 568px;
+  height: 86px;
 }
 
 .footer {
@@ -177,9 +182,8 @@ a {
 .map {
   height: 594px;
   width: 1199px;
-  left: 41.000000000000455px;
+  left: 41px;
   top: 2169px;
-  border-radius: 0px;
 }
 
 .visit a {
@@ -199,12 +203,14 @@ a {
 .socials a {
   text-decoration: none;
   color: var(--basic-black);
+  background-color: var(--basic-blue);
 }
 
 .features {
-  background-image: url("images/background-catalog.jpg");
+  background-image: url("../images/background-catalog.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .features-list legend {
@@ -232,8 +238,12 @@ a {
   width: 23px;
   left: 0px;
   top: 0px;
-  border-radius: 0px;
   color: var(--basic-white);
+}
+
+.features-button:hover,
+.features-button:focus {
+  color: var(--basic-extra-white);
 }
 
 .features-button {
@@ -246,6 +256,11 @@ a {
   color: var(--basic-white);
   border: 2px solid var(--basic-white);
   background: none;
+}
+
+.filter-items a:hover,
+.filter-items a:focus {
+  color: var(--basic-extra-white);
 }
 
 .items {
@@ -262,40 +277,7 @@ a {
   color: var(--basic-black);
 }
 
-.sort {
-  font: inherit;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: var(--basic-black);
-}
-
-.price a {
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: var(--basic-blue);
-}
-
-.type a {
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: var(--basic-black);
-  border-bottom: 1px dashed var(--basic-blue);
-  opacity: 0.3;
-}
-
-.rating a {
+.filter-items {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -328,6 +310,16 @@ a {
   line-height: 21px;
   letter-spacing: 0px;
   text-align: left;
+  color: var(--basic-light-grey);
+}
+
+.detailed:hover,
+.detailed:focus {
+  color: var(--basic-light-grey);
+}
+
+.book:hover,
+.book:focus {
   color: var(--basic-light-grey);
 }
 
