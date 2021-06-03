@@ -101,7 +101,7 @@ a {
   color: var(--basic-white);
 }
 
-.advantages-text h2 {
+.advantages-item h2 {
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
@@ -112,7 +112,7 @@ a {
   margin: 0;
 }
 
-.advantages-text p {
+.advantages-item p {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -128,7 +128,7 @@ a {
   text-align: center;
 }
 
-.advantages-2 {
+.advantages-grey {
   list-style: none;
   text-align: center;
   background-color: var(--basic-extra-grey);
@@ -209,12 +209,12 @@ a {
   padding: 17px;
 }
 
-.socials:hover,
-.socials:focus {
+.socials a:hover,
+.socials a:focus {
   color: var(--basic-light-grey);
 }
 
-.socials:active {
+.socials a:active {
   color: var(--basic-white);
   opacity: 0.3;
 }
