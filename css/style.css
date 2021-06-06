@@ -250,21 +250,21 @@ a {
 
 .socials a {
   text-decoration: none;
-  color: var(--basic-black);
+  color: var(--basic-extra-grey);
   background-color: var(--basic-blue);
   padding: 17px;
   margin-right: 6px;
-
 }
 
 .socials a:hover,
 .socials a:focus {
-  background-color: #669EC0;
+  color: var(--basic-black);
+  background-color: #669ec0;
 }
 
-.socials a:active {
-  background-color: #5496BD;
- opacity: 0.3;
+.socials img:active {
+  background-color: #5496bd;
+  opacity: 0.3;
 }
 
 .features {
@@ -277,8 +277,10 @@ a {
   background-size: cover;
 }
 
-
-
+.features-list:last-child {
+  justify-self: end;
+  margin-right: 73px;
+}
 
 .features-list legend {
   font-size: 16px;
@@ -346,7 +348,6 @@ a {
   line-height: 26px;
   letter-spacing: 0px;
   text-align: left;
-
 }
 
 .sort {
@@ -356,7 +357,6 @@ a {
   line-height: 18px;
   letter-spacing: 0px;
   text-align: left;
-
 }
 
 .filter-resorts {
@@ -369,7 +369,6 @@ a {
   color: var(--basic-black);
   border-bottom: 1px dashed var(--basic-blue);
   opacity: 0.3;
-
 }
 
 .filter-resorts :active {
@@ -472,14 +471,4 @@ a {
   text-align: center;
   color: #666666;
   background-color: var(--basic-extra-white);
-}
-
-.author img:hover,
-.author img:focus {
-  color: var(--basic-blue);
-}
-
-.author img:active {
-  color: var(--basic-black);
-  opacity: 0.3;
 }
