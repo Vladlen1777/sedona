@@ -42,21 +42,21 @@ a {
   line-height: 26px;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  justify-content: stretch;
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.main-header-logo {
-  justify-self: center;
-  width: 138px;
-  height: 70px;
+.main-header-logo img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .site-navigation {
+  display: grid;
+  grid-template-columns: 234px 500px 300px 234px;
   list-style: none;
 }
 
@@ -107,7 +107,10 @@ a {
 .description {
   display: grid;
   grid-template-columns: min-content 1fr;
-  margin-bottom: 61px;
+}
+
+.advantages-2 {
+  height: 256px;
 }
 
 .description h2 {
@@ -169,12 +172,17 @@ a {
 
 .advantages-grey {
   display: grid;
+
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 300px;
+
   list-style: none;
   text-align: center;
   background-color: var(--basic-extra-grey);
   margin-bottom: 58px;
+  padding-left: 140px;
+  padding-right: 151px;
+  margin-top: 0;
 }
 
 .snippet h2 {
@@ -252,8 +260,6 @@ a {
   text-decoration: none;
   color: var(--basic-extra-grey);
   background-color: var(--basic-blue);
-  padding: 17px;
-  margin-right: 6px;
 }
 
 .socials a:hover,
@@ -269,7 +275,7 @@ a {
 
 .features {
   display: grid;
-  grid-template-columns: min-content min-content 1fr;
+  grid-template-columns: 250px 250px 700px;
   grid-gap: 119px;
   background-image: url("../images/background-catalog.jpg");
   background-position: center;
@@ -331,7 +337,7 @@ a {
 
 .resorts {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 146px 140px 1fr 1fr 1fr;
   list-style: none;
   margin-left: 73px;
 }
@@ -471,4 +477,12 @@ a {
   text-align: center;
   color: #666666;
   background-color: var(--basic-extra-white);
+}
+
+svg:hover path {
+  fill: #81b3d2;
+}
+
+svg:active path {
+  fill: #a9a9a9;
 }
