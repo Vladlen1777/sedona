@@ -21,8 +21,9 @@
 }
 
 body {
-  min-width: 960px;
-  margin: 0;
+  min-width: 1200px;
+
+  margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   background-color: var(--basic-white);
@@ -36,7 +37,11 @@ a {
   text-decoration: none;
 }
 
+
+
 .main-navigation {
+  display: flex;
+j
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -52,15 +57,23 @@ a {
   left: 0;
   right: 0;
   margin: auto;
+
+
 }
 
 .site-navigation {
-  display: grid;
-  grid-template-columns: 234px 500px 300px 234px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+
   list-style: none;
+
 }
 
 .site-navigation a {
+
   color: var(--basic-black);
 }
 
@@ -74,6 +87,8 @@ a {
   color: var(--basic-blue);
 }
 
+
+
 .image {
   text-align: center;
   background-image: url("../images/background-index.jpg");
@@ -83,10 +98,10 @@ a {
 
 .slogan h1 {
   font-size: 21px;
-  font-style: normal;
-  font-weight: 700;
+
+
   line-height: 26px;
-  letter-spacing: 0px;
+
   text-align: center;
   color: var(--basic-black);
   list-style: none;
@@ -94,10 +109,10 @@ a {
 
 .slogan p {
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
+
+
   line-height: 26px;
-  letter-spacing: 0px;
+
   text-align: center;
   color: var(--basic-light-grey);
   list-style: none;
@@ -107,33 +122,46 @@ a {
 .description {
   display: grid;
   grid-template-columns: min-content 1fr;
+  margin-bottom: 60px;
 }
 
 .advantages-2 {
   height: 256px;
+  width: 800px;
 }
 
 .description h2 {
   font-size: 21px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 21px;
-  letter-spacing: 0px;
   text-align: center;
   color: var(--basic-white);
+  padding-top: 47px;
+  padding-left: 139px;
+  padding-right: 139px;
+
+
 }
 
 .description-text {
   background-color: var(--basic-blue);
   height: 256px;
   width: 400px;
-  left: 40px;
-  top: 780px;
-  border-radius: 0%;
+  margin-top: 0;
+
   text-align: center;
   list-style: none;
   color: var(--basic-white);
+
 }
+
+.description-text p {
+  margin-left: 49px;
+  margin-right: 49px;
+  margin-bottom: 23px;
+
+}
+
+
 
 .advantages {
   margin-bottom: 81px;
@@ -141,10 +169,23 @@ a {
 
 .advantages-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 124px;
+  grid-template-columns: 254px 297px 269px;
+  grid-gap: 124px ;
+margin: 0 70px;
   list-style: none;
 }
+
+.advantages-grey {
+  display: grid;
+  grid-template-columns: 207px 258px 245px;
+  grid-gap: 300px;
+  list-style: none;
+  background-color: var(--basic-extra-grey);
+  margin-bottom: 58px;
+  margin-top: 0;
+  padding: 47px 60px;
+}
+
 
 .advantages-item {
   text-align: center;
@@ -152,54 +193,29 @@ a {
 
 .advantages-item h2 {
   font-size: 21px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 21px;
-  letter-spacing: 0px;
-  list-style: none;
   color: var(--basic-black);
+  padding-bottom: 25px;
 }
 
 .advantages-item p {
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 21px;
-  letter-spacing: 0px;
-  list-style: none;
   color: var(--basic-light-grey);
+  padding-bottom: 23px;
+
 }
 
-.advantages-grey {
-  display: grid;
-
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 300px;
-
-  list-style: none;
-  text-align: center;
-  background-color: var(--basic-extra-grey);
-  margin-bottom: 58px;
-  padding-left: 140px;
-  padding-right: 151px;
-  margin-top: 0;
-}
 
 .snippet h2 {
   font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 24px;
-  letter-spacing: 0px;
   text-align: center;
 }
 
 .snippet p {
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0px;
   text-align: center;
   margin-bottom: 24px;
 }
@@ -216,11 +232,8 @@ a {
 
 .button {
   font-size: 21px;
-  font-style: normal;
   font-weight: 700;
   line-height: 26px;
-  letter-spacing: 0px;
-  text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-brown);
   margin-left: 30%;
@@ -238,8 +251,7 @@ a {
 .map {
   height: 594px;
   width: 1199px;
-  left: 41px;
-  top: 2169px;
+
 }
 
 .visit a {
@@ -256,7 +268,18 @@ a {
   color: var(--basic-black);
 }
 
+.socials {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+
+}
+
 .socials a {
+  margin: 0 6px;
+  margin-top: 16px;
+  width: 46px;
+  height: 48px;
   text-decoration: none;
   color: var(--basic-extra-grey);
   background-color: var(--basic-blue);
@@ -268,19 +291,28 @@ a {
   background-color: #669ec0;
 }
 
+.socials img {
+  padding: 15px 12px;
+}
+
 .socials img:active {
   background-color: #5496bd;
   opacity: 0.3;
 }
 
 .features {
-  display: grid;
-  grid-template-columns: 250px 250px 700px;
-  grid-gap: 119px;
+  display: flex;
   background-image: url("../images/background-catalog.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+
+}
+
+.features-list {
+  margin-left: 72px;
+  margin-top: 26px;
 }
 
 .features-list:last-child {
@@ -290,31 +322,25 @@ a {
 
 .features-list legend {
   font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 21px;
-  letter-spacing: 0px;
-  text-align: left;
   color: var(--basic-white);
+
 }
 
 .features-list label {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 21px;
-  letter-spacing: 0px;
-  text-align: left;
   color: var(--basic-white);
+  padding-bottom: 24px;
+
 }
 
 .features-input {
   height: 23px;
   width: 23px;
-  left: 0px;
-  top: 0px;
+
   color: var(--basic-white);
 }
 
@@ -325,11 +351,7 @@ a {
 
 .features-button {
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 21px;
-  letter-spacing: 0px;
-  text-align: left;
   color: var(--basic-white);
   border: 2px solid var(--basic-white);
   background: none;
@@ -349,29 +371,18 @@ a {
 
 .found {
   font-size: 21px;
-  font-style: normal;
   font-weight: 700;
   line-height: 26px;
-  letter-spacing: 0px;
-  text-align: left;
 }
 
 .sort {
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
-  letter-spacing: 0px;
-  text-align: left;
 }
 
 .filter-resorts {
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
-  letter-spacing: 0px;
-  text-align: left;
   color: var(--basic-black);
   border-bottom: 1px dashed var(--basic-blue);
   opacity: 0.3;
@@ -397,12 +408,9 @@ a {
 }
 
 .hotel h2 {
+  grid-row: 1/5;
   font-size: 21px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 26px;
-  letter-spacing: 0px;
-  text-align: left;
   color: var(--basic-black);
 }
 
@@ -417,12 +425,10 @@ a {
 }
 
 .hotel span {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 21px;
-  letter-spacing: 0px;
-  text-align: left;
   color: var(--basic-light-grey);
 }
 
@@ -448,35 +454,27 @@ a {
 
 .detailed {
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 21px;
-  letter-spacing: 0px;
-  text-align: left;
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
 
 .book {
+
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 21px;
-  letter-spacing: 0px;
-  text-align: left;
   color: var(--basic-white);
   background-color: var(--basic-brown);
 }
 
 .rait {
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 21px;
-  letter-spacing: 0px;
-  text-align: center;
   color: #666666;
   background-color: var(--basic-extra-white);
+  justify-self: end;
 }
 
 svg:hover path {
