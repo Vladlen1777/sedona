@@ -22,7 +22,6 @@
 
 body {
   min-width: 1200px;
-
   margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -37,11 +36,8 @@ a {
   text-decoration: none;
 }
 
-
-
 .main-navigation {
   display: flex;
-j
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -49,7 +45,7 @@ j
   background-color: var(--basic-white);
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding-left: 0;
 }
 
 .main-header-logo img {
@@ -57,8 +53,6 @@ j
   left: 0;
   right: 0;
   margin: auto;
-
-
 }
 
 .site-navigation {
@@ -66,14 +60,10 @@ j
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-
-
   list-style: none;
-
 }
 
 .site-navigation a {
-
   color: var(--basic-black);
 }
 
@@ -87,8 +77,6 @@ j
   color: var(--basic-blue);
 }
 
-
-
 .image {
   text-align: center;
   background-image: url("../images/background-index.jpg");
@@ -98,10 +86,7 @@ j
 
 .slogan h1 {
   font-size: 21px;
-
-
   line-height: 26px;
-
   text-align: center;
   color: var(--basic-black);
   list-style: none;
@@ -109,20 +94,22 @@ j
 
 .slogan p {
   font-size: 14px;
-
-
   line-height: 26px;
-
   text-align: center;
   color: var(--basic-light-grey);
   list-style: none;
   margin-bottom: 51px;
 }
 
-.description {
+.description-1 {
   display: grid;
   grid-template-columns: min-content 1fr;
   margin-bottom: 60px;
+}
+
+.description-2 {
+  display: grid;
+  grid-template-columns: min-content 1fr;
 }
 
 .advantages-2 {
@@ -138,8 +125,6 @@ j
   padding-top: 47px;
   padding-left: 139px;
   padding-right: 139px;
-
-
 }
 
 .description-text {
@@ -147,21 +132,16 @@ j
   height: 256px;
   width: 400px;
   margin-top: 0;
-
   text-align: center;
   list-style: none;
   color: var(--basic-white);
-
 }
 
 .description-text p {
   margin-left: 49px;
   margin-right: 49px;
   margin-bottom: 23px;
-
 }
-
-
 
 .advantages {
   margin-bottom: 81px;
@@ -170,8 +150,8 @@ j
 .advantages-list {
   display: grid;
   grid-template-columns: 254px 297px 269px;
-  grid-gap: 124px ;
-margin: 0 70px;
+  grid-gap: 124px;
+  margin: 0 70px;
   list-style: none;
 }
 
@@ -183,29 +163,34 @@ margin: 0 70px;
   background-color: var(--basic-extra-grey);
   margin-bottom: 58px;
   margin-top: 0;
-  padding: 47px 60px;
 }
-
 
 .advantages-item {
   text-align: center;
+  padding-top: 47px;
+  padding-bottom: 54px;
 }
 
 .advantages-item h2 {
+  display: grid;
+  grid-template-columns: 120px 100px 98px;
+  margin-left: 30px;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .advantages-item p {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-light-grey);
-  padding-bottom: 23px;
-
+  margin-bottom: 23px;
 }
 
+.area {
+  width: 230px;
+}
 
 .snippet h2 {
   font-size: 30px;
@@ -251,7 +236,6 @@ margin: 0 70px;
 .map {
   height: 594px;
   width: 1199px;
-
 }
 
 .visit a {
@@ -272,12 +256,13 @@ margin: 0 70px;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-
 }
 
 .socials a {
-  margin: 0 6px;
-  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 6px;
   width: 46px;
   height: 48px;
   text-decoration: none;
@@ -291,10 +276,6 @@ margin: 0 70px;
   background-color: #669ec0;
 }
 
-.socials img {
-  padding: 15px 12px;
-}
-
 .socials img:active {
   background-color: #5496bd;
   opacity: 0.3;
@@ -306,8 +287,6 @@ margin: 0 70px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-
 }
 
 .features-list {
@@ -315,32 +294,25 @@ margin: 0 70px;
   margin-top: 26px;
 }
 
-.features-list:last-child {
-  justify-self: end;
-  margin-right: 73px;
-}
-
 .features-list legend {
   font-size: 16px;
   line-height: 21px;
   color: var(--basic-white);
-
+  margin-bottom: 24px;
 }
 
 .features-list label {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  width: ;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-white);
   padding-bottom: 24px;
-
 }
 
 .features-input {
   height: 23px;
   width: 23px;
-
   color: var(--basic-white);
 }
 
@@ -461,7 +433,6 @@ margin: 0 70px;
 }
 
 .book {
-
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
