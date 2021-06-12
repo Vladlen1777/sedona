@@ -36,32 +36,58 @@
     <form class="features">
       <fieldset class="features-list">
         <legend>Инфраструктура:</legend>
-        <input type="checkbox" for="check1" checked />
-        <label for="check1">Бассейн</label>
+        <label>
+          <input
+            class="features-input"
+            type="checkbox"
+            for="check1"
+            checked
+          />Бассейн
+        </label>
+        <label>
+          <input class="features-input" type="checkbox" for="check1" />Парковка
+        </label>
 
-        <input type="checkbox" for="check1" />
-        <label for="check1">Парковка</label>
-
-        <input type="checkbox" for="check1" />
-        <label for="check1">Wi-Fi</label>
+        <label>
+          <input class="features-input" type="checkbox" for="check1" />Wi-Fi
+        </label>
       </fieldset>
       <fieldset class="features-list">
         <legend>Тип жилья:</legend>
-        <input class="features-input" type="checkbox" for="check1" checked />
-        <label for="check1">Гостиница</label>
+        <label>
+          <input
+            class="features-input"
+            type="checkbox"
+            for="check1"
+            checked
+          />Гостиница
+        </label>
 
-        <input class="features-input" type="checkbox" for="check1" checked />
-        <label for="check1">Мотель</label>
+        <label>
+          <input
+            class="features-input"
+            type="checkbox"
+            for="check1"
+            checked
+          />Мотель
+        </label>
 
-        <input class="features-input" type="checkbox" for="check1" checked />
-        <label for="check1">Апартаменты</label>
+        <label>
+          <input
+            class="features-input"
+            type="checkbox"
+            for="check1"
+            checked
+          />Апартаменты
+        </label>
       </fieldset>
       <fieldset class="features-list">
         <legend>СТОИМОСТЬ В СУТКИ, ₽:</legend>
-        <label>от</label>
-        <input class="features-input" type="text" value="0" />
-        <label>До</label>
-        <input class="features-input" type="text" value="3000" />
+
+        <label
+          >ОТ <input class="features-input" type="text" value="0" /> ДО
+          <input class="features-input" type="text" value="3000" />
+        </label>
         <button class="features-button" type="submit">ПОКАЗАТЬ</button>
       </fieldset>
     </form>

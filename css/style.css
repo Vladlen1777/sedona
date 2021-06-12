@@ -21,7 +21,7 @@
 }
 
 body {
-  min-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -44,8 +44,6 @@ a {
   color: var(--basic-black);
   background-color: var(--basic-white);
   width: 1200px;
-  margin: 0 auto;
-  padding-left: 0;
 }
 
 .main-header-logo img {
@@ -57,10 +55,10 @@ a {
 
 .site-navigation {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 100%;
   list-style: none;
+  padding: 0 72px;
 }
 
 .site-navigation a {
@@ -82,6 +80,12 @@ a {
   background-image: url("../images/background-index.jpg");
   background-size: cover;
   margin-bottom: 42px;
+  width: 1200px;
+}
+
+.image img {
+  padding-top: 48px;
+  padding-bottom: 80px;
 }
 
 .slogan h1 {
@@ -107,17 +111,7 @@ a {
   margin-bottom: 60px;
 }
 
-.description-2 {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-}
-
-.advantages-2 {
-  height: 256px;
-  width: 800px;
-}
-
-.description h2 {
+.description-1 h2 {
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -125,6 +119,26 @@ a {
   padding-top: 47px;
   padding-left: 139px;
   padding-right: 139px;
+}
+
+.description-2 {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
+.description-2 h2 {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-white);
+  padding-top: 47px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.advantages-2 {
+  height: 256px;
+  width: 800px;
 }
 
 .description-text {
@@ -157,12 +171,16 @@ a {
 
 .advantages-grey {
   display: grid;
-  grid-template-columns: 207px 258px 245px;
-  grid-gap: 300px;
+  grid-template-columns: 254px 297px 269px;
+  grid-gap: 124px;
+  margin: 0 70px;
   list-style: none;
   background-color: var(--basic-extra-grey);
-  margin-bottom: 58px;
-  margin-top: 0;
+  margin-bottom: 61px;
+  width: 1200px;
+  margin-left: 0;
+  padding: 0;
+  justify-content: center;
 }
 
 .advantages-item {
@@ -172,9 +190,6 @@ a {
 }
 
 .advantages-item h2 {
-  display: grid;
-  grid-template-columns: 120px 100px 98px;
-  margin-left: 30px;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -254,7 +269,6 @@ a {
 
 .socials {
   display: flex;
-  flex-direction: row;
   margin: 0 auto;
 }
 
@@ -287,6 +301,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 29px;
 }
 
 .features-list {
@@ -330,15 +345,14 @@ a {
 }
 
 .resorts {
-  display: grid;
-  grid-template-columns: 146px 140px 1fr 1fr 1fr;
+  display: flex;
   list-style: none;
   margin-left: 73px;
+  margin-bottom: 31px;
 }
 
 .current {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
 }
 
 .found {
@@ -350,6 +364,9 @@ a {
 .sort {
   font-size: 12px;
   line-height: 18px;
+  padding-left: 46px;
+  padding-top: 5px;
+  padding-right: 40px;
 }
 
 .filter-resorts {
@@ -358,6 +375,7 @@ a {
   color: var(--basic-black);
   border-bottom: 1px dashed var(--basic-blue);
   opacity: 0.3;
+  padding: 5px 32px;
 }
 
 .filter-resorts :active {
@@ -380,7 +398,6 @@ a {
 }
 
 .hotel h2 {
-  grid-row: 1/5;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
@@ -397,8 +414,6 @@ a {
 }
 
 .hotel span {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-light-grey);
