@@ -55,6 +55,7 @@ a {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   list-style: none;
@@ -274,6 +275,7 @@ a {
 
 .socials a {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 20px 6px;
@@ -307,6 +309,7 @@ a {
 .features-list {
   margin-left: 72px;
   margin-top: 26px;
+  margin-bottom: 32px;
 }
 
 .features-list legend {
@@ -318,17 +321,49 @@ a {
 
 .features-list label {
   display: flex;
-  width: ;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-white);
   padding-bottom: 24px;
 }
 
+.features-list:last-child {
+  margin-left: 334px;
+}
+
+.features-list:last-child label {
+  width: 317px;
+  height: 36px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  justify-content: space-around;
+  margin-bottom: 55px;
+  border-radius: 2px;
+}
+
 .features-input {
   height: 23px;
   width: 23px;
   color: var(--basic-white);
+}
+
+.features-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  border: 2px solid #ffffff;
+}
+.features-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url("images/shape.svg");
 }
 
 .features-button:hover,
@@ -342,6 +377,14 @@ a {
   color: var(--basic-white);
   border: 2px solid var(--basic-white);
   background: none;
+  width: 137px;
+  height: 36px;
+  margin-left: 90px;
+}
+
+.features-button:hover {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 .resorts {
@@ -353,6 +396,28 @@ a {
 
 .current {
   display: flex;
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  width: 11px;
+  height: 10px;
+  background-image: url("images/icons/up-down.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: #81b3d2;
+}
+
+.current::after {
+  content: "";
+  width: 11px;
+  height: 10px;
+  background-image: url("images/icons/up-down.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: #a9a9a9;
+  transform: rotate(45deg);
 }
 
 .found {
@@ -469,4 +534,17 @@ svg:hover path {
 
 svg:active path {
   fill: #a9a9a9;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
