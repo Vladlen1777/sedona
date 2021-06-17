@@ -84,6 +84,10 @@ a {
   width: 1200px;
 }
 
+.image svg {
+  margin-bottom: -3px;
+}
+
 .image img {
   padding-top: 48px;
   padding-bottom: 80px;
@@ -243,15 +247,28 @@ a {
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 1200px;
   text-align: center;
-  padding-top: 23px;
+  padding-top: 5px;
+  position: relative;
+}
+
+.form-appointment {
+  position: absolute;
+  margin: 0 auto;
 }
 
 .map {
   height: 594px;
   width: 1199px;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
 }
 
 .visit a {
@@ -264,7 +281,13 @@ a {
   color: var(--basic-black);
 }
 
+.author {
+  display: flex;
+  padding: 30px 80px;
+}
+
 .author p {
+  margin: 5px 15px;
   color: var(--basic-black);
 }
 
@@ -310,6 +333,7 @@ a {
   margin-left: 72px;
   margin-top: 26px;
   margin-bottom: 32px;
+  border: none;
 }
 
 .features-list legend {
@@ -327,18 +351,70 @@ a {
   padding-bottom: 24px;
 }
 
-.features-list:last-child {
-  margin-left: 334px;
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-left: 393px;
+  margin-top: 17px;
 }
 
-.features-list:last-child label {
+.filter-item legend {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.price-controls {
+  margin-bottom: 20px;
   width: 317px;
   height: 36px;
   border: 2px solid #ffffff;
   box-sizing: border-box;
-  justify-content: space-around;
-  margin-bottom: 55px;
   border-radius: 2px;
+  text-align: center;
+}
+
+.price-controls label {
+  color: #ffffff;
+}
+
+.range-filter {
+  width: 316px;
+  margin-top: 20px;
+  margin-bottom: 33px;
+}
+
+.scale {
+  width: 316px;
+  height: 2px;
+  background: #ffffff;
+  opacity: 0.3;
+}
+
+.bar {
+  height: 2px;
+  width: 70%;
+  background: #ffffff;
+}
+
+.toggle {
+  position: absolute;
+  top: 161px;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #a9a9a9;
+  border-radius: 50%;
+}
+
+.toggle-min {
+  left: 931px;
+}
+
+.toggle-max {
+  left: 1153px;
 }
 
 .features-input {
@@ -399,27 +475,6 @@ a {
   position: relative;
 }
 
-.current::after {
-  content: "";
-  width: 11px;
-  height: 10px;
-  background-image: url("images/icons/up-down.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-color: #81b3d2;
-}
-
-.current::after {
-  content: "";
-  width: 11px;
-  height: 10px;
-  background-image: url("images/icons/up-down.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-color: #a9a9a9;
-  transform: rotate(45deg);
-}
-
 .found {
   font-size: 21px;
   font-weight: 700;
@@ -432,6 +487,27 @@ a {
   padding-left: 46px;
   padding-top: 5px;
   padding-right: 40px;
+}
+
+.triangle::after {
+  border: 11px solid transparent;
+  border-top-color: #5496bd;
+  content: "";
+  height: 10px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.triangle::before {
+  border: 11px solid transparent;
+  border-bottom-color: #666666;
+  content: "";
+  height: 10px;
+
+  background-repeat: no-repeat;
+
+  left: 1133px;
+  top: 313px;
 }
 
 .filter-resorts {

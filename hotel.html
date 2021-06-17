@@ -33,7 +33,7 @@
         </ul>
       </nav>
     </header>
-    <form class="features">
+    <form class="features" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="features-list">
         <legend>Инфраструктура:</legend>
         <label>
@@ -90,16 +90,31 @@
           />Апартаменты
         </label>
       </fieldset>
-      <fieldset class="features-list">
-        <legend>СТОИМОСТЬ В СУТКИ, ₽:</legend>
 
-        <label
-          >ОТ <input class="features-input" type="text" value="0" /> ДО
-          <input class="features-input" type="text" value="3000" />
-        </label>
-        <button class="features-button" type="submit">ПОКАЗАТЬ</button>
+
+      <fieldset class="filter-item">
+        <legend>СТОИМОСТЬ В СУТКИ, ₽:</legend>
+        <div class="range-filter">
+          <div class="price-controls">
+            <label class="min-price">
+              от <input type="text" name="min-price" value="0" />
+            </label>
+            <label class="max-price">
+              до <input type="text" name="max-price" value="3000" />
+            </label>
+          </div>
+
+  <div class="scale">
+    <div class="bar">
+      <div class="toggle toggle-min"></div>
+      <div class="toggle toggle-max"></div>
+    </div>
+  </div>
+</div>
+<button class="features-button" type="submit">ПОКАЗАТЬ</button>
       </fieldset>
     </form>
+
     <section>
       <ul class="resorts">
         <li class="found">Найдено: 3</li>
@@ -108,8 +123,10 @@
           <li class="filter-resorts"><a href="#">По цене</a></li>
           <li class="filter-resorts"><a href="#">По типу</a></li>
           <li class="filter-resorts"><a href="#">По рейтингу</a></li>
+          <span class="triangle"></span>
         </div>
       </ul>
+
       <ul class="hotel">
         <li class="hotel-item">
           <img
