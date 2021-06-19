@@ -86,6 +86,7 @@ a {
 
 .image svg {
   margin-bottom: -3px;
+  pointer-events: none;
 }
 
 .image img {
@@ -172,6 +173,7 @@ a {
   grid-gap: 124px;
   margin: 0 70px;
   list-style: none;
+  padding: 0;
 }
 
 .advantages-grey {
@@ -180,7 +182,7 @@ a {
   grid-gap: 124px;
   margin: 0 70px;
   list-style: none;
-  background-color: var(--basic-extra-grey);
+  background-color: var(--basic-grey);
   margin-bottom: 61px;
   width: 1200px;
   margin-left: 0;
@@ -210,6 +212,7 @@ a {
 
 .area {
   width: 230px;
+  padding-left: 15px;
 }
 
 .snippet h2 {
@@ -241,9 +244,33 @@ a {
   line-height: 26px;
   color: var(--basic-white);
   background-color: var(--basic-brown);
-  margin-left: 30%;
+  margin-left: 340px;
   width: 568px;
   height: 86px;
+}
+
+.hotel-form {
+  position: absolute;
+  height: 395px;
+  width: 568px;
+  background: #ffffff;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  margin-left: 340px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.form-input {
+  height: 26px;
+  width: 133px;
+  left: 536px;
+  top: 2230px;
+  border-radius: nullpx;
+  background: #f2f2f2;
 }
 
 .footer {
@@ -351,8 +378,50 @@ a {
   padding-bottom: 24px;
 }
 
+.features-filter {
+  display: block;
+  position: relative;
+}
+
+.features-input {
+  height: 23px;
+  width: 23px;
+  color: var(--basic-white);
+}
+
+.features-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  border: 2px solid #ffffff;
+}
+.features-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url("images/shape.svg");
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .filter-item {
-  margin: 0;
   padding: 0;
   border: none;
   margin-left: 393px;
@@ -373,6 +442,10 @@ a {
   box-sizing: border-box;
   border-radius: 2px;
   text-align: center;
+}
+
+.min-price input {
+  width: 10px;
 }
 
 .price-controls label {
@@ -415,31 +488,6 @@ a {
 
 .toggle-max {
   left: 1153px;
-}
-
-.features-input {
-  height: 23px;
-  width: 23px;
-  color: var(--basic-white);
-}
-
-.features-input-checkbox + label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 23px;
-  height: 23px;
-  border: 2px solid #ffffff;
-}
-.features-input-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 16px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-image: url("images/shape.svg");
 }
 
 .features-button:hover,
@@ -489,25 +537,8 @@ a {
   padding-right: 40px;
 }
 
-.triangle::after {
-  border: 11px solid transparent;
-  border-top-color: #5496bd;
-  content: "";
-  height: 10px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.triangle::before {
-  border: 11px solid transparent;
-  border-bottom-color: #666666;
-  content: "";
-  height: 10px;
-
-  background-repeat: no-repeat;
-
-  left: 1133px;
-  top: 313px;
+.current svg {
+  margin-left: 20px;
 }
 
 .filter-resorts {
@@ -555,6 +586,7 @@ a {
 }
 
 .hotel span {
+  display: grid;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-light-grey);
@@ -600,8 +632,11 @@ a {
   font-size: 14px;
   line-height: 21px;
   color: #666666;
-  background-color: var(--basic-extra-white);
-  justify-self: end;
+  color: #666666;
+  background-color: #f2f2f2;
+  height: 21px;
+  width: 83px;
+  margin-left: 70px;
 }
 
 svg:hover path {
@@ -610,17 +645,4 @@ svg:hover path {
 
 svg:active path {
   fill: #a9a9a9;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
