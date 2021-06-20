@@ -277,23 +277,24 @@ a {
   width: 1200px;
   text-align: center;
   padding-top: 5px;
-  position: relative;
+  position: absolute;
 }
 
 .form-appointment {
   position: absolute;
   margin: 0 auto;
 }
+.map img {
+display: block;
+}
 
-.map {
-  height: 594px;
-  width: 1199px;
+.map iframe {
+ border: none;
 }
 
 .contacts {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  position: absolute;
   background: rgba(255, 255, 255, 0.9);
   width: 100%;
 }
@@ -378,10 +379,7 @@ a {
   padding-bottom: 24px;
 }
 
-.features-filter {
-  display: block;
-  position: relative;
-}
+
 
 .features-input {
   height: 23px;
@@ -389,7 +387,7 @@ a {
   color: var(--basic-white);
 }
 
-.features-input-checkbox + label::before {
+.filter-list::before  {
   content: "";
   position: absolute;
   left: 0;
@@ -398,7 +396,8 @@ a {
   height: 23px;
   border: 2px solid #ffffff;
 }
-.features-input-checkbox:checked + label::after {
+
+.filter-list:checked::after {
   content: "";
   position: absolute;
   width: 21px;
@@ -435,17 +434,31 @@ a {
 }
 
 .price-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-bottom: 20px;
   width: 317px;
   height: 36px;
   border: 2px solid #ffffff;
   box-sizing: border-box;
   border-radius: 2px;
-  text-align: center;
+
 }
 
 .min-price input {
   width: 10px;
+  background: none;
+  border: none;
+  color: #ffffff;
+}
+
+
+.max-price input {
+  width: 40px;
+  background: none;
+  border: none;
+  color: #ffffff;
 }
 
 .price-controls label {
@@ -566,7 +579,14 @@ a {
 }
 
 .hotel-item {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px;
   margin-bottom: 61px;
+}
+
+.hotel-item a {
+
 }
 
 .hotel h2 {
@@ -586,10 +606,10 @@ a {
 }
 
 .hotel span {
-  display: grid;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-light-grey);
+
 }
 
 .detailed:hover,
@@ -618,6 +638,7 @@ a {
   line-height: 21px;
   color: var(--basic-white);
   background-color: var(--basic-blue);
+
 }
 
 .book {
@@ -626,6 +647,7 @@ a {
   line-height: 21px;
   color: var(--basic-white);
   background-color: var(--basic-brown);
+
 }
 
 .rait {
