@@ -37,68 +37,62 @@
       <fieldset class="features-list">
         <legend>Инфраструктура:</legend>
 
-        <label class="filter-list">
-          <input
-          class="visually-hidden features-input-checkbox features-input"
-          type="checkbox"
-          for="check1"
-          checked
-        />Бассейн
-        </label>
-
-
-
-        <label class="filter-list">
+        <label class="filter-list" for="pool">
           <input
             class="visually-hidden features-input-checkbox features-input"
             type="checkbox"
-            for="check1"
+            id="pool"
+            checked
+          />Бассейн
+        </label>
+
+        <label class="filter-list" for="parking">
+          <input
+            class="visually-hidden features-input-checkbox features-input"
+            type="checkbox"
+            id="parking"
           />Парковка
         </label>
 
-        <label class="filter-list">
+        <label class="filter-list" for="wi-fi">
           <input
             class="visually-hidden features-input-checkbox features-input"
             type="checkbox"
-            for="check1"
+            id="wi-fi"
           />Wi-Fi
         </label>
       </fieldset>
       <fieldset class="features-list">
         <legend>Тип жилья:</legend>
 
-        <label class="filter-list">
+        <label class="filter-list" for="hotel">
           <input
             class="visually-hidden features-input-checkbox features-input"
             type="checkbox"
-            for="check1"
+            id="hotel"
             checked
           />Гостиница
         </label>
 
-        <label class="filter-list">
+        <label class="filter-list" for="motel">
           <input
-          class="visually-hidden features-input-checkbox features-input"
-          type="checkbox"
-          for="check1"
-          checked
-        />
-        Мотель
+            class="visually-hidden features-input-checkbox features-input"
+            type="checkbox"
+            id="motel"
+            checked
+          />
+          Мотель
         </label>
 
-
-
-        <label class="filter-list">
+        <label class="filter-list" for="appartaments">
           <input
-          class="visually-hidden features-input-checkbox features-input"
-          type="checkbox"
-          for="check1"
-          checked
-        />
-        Апартаменты
+            class="visually-hidden features-input-checkbox features-input"
+            type="checkbox"
+            id="appartaments"
+            checked
+          />
+          Апартаменты
         </label>
-
-
       </fieldset>
 
       <fieldset class="filter-item">
@@ -114,13 +108,19 @@
           </div>
 
           <div class="scale">
-            <div class="bar">
-              <div class="toggle toggle-min"></div>
-              <div class="toggle toggle-max"></div>
-            </div>
+            <div class="bar"></div>
           </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
         </div>
-        <button class="features-button" type="submit">ПОКАЗАТЬ</button>
+
+        <button
+          class="features-button"
+          type="submit"
+          aria-label="показать стоимость в сутки"
+        >
+          ПОКАЗАТЬ
+        </button>
       </fieldset>
     </form>
 
@@ -133,6 +133,8 @@
           <li class="filter-resorts"><a href="#">По типу</a></li>
           <li class="filter-resorts"><a href="#">По рейтингу</a></li>
           <svg
+            aria-hidden="true"
+            focusable="false"
             width="11"
             height="10"
             viewBox="0 0 11 10"
@@ -142,6 +144,8 @@
             <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
           </svg>
           <svg
+            aria-hidden="true"
+            focusable="false"
             width="11"
             height="10"
             viewBox="0 0 11 10"
@@ -165,10 +169,17 @@
           <a href="amara.html">
             <h2>Amara Resort & Spa</h2>
           </a>
+
           <span>Гостиница</span>
-          <button class="detailed" type="submit">ПОДРОБНЕЕ</button>
+
+          <button class="detailed" type="submit" aria-label="подробнее">
+            ПОДРОБНЕЕ
+          </button>
           <span>От 4000 ₽</span>
-          <button class="book" type="submit">ЗАБРОНИРОВАТЬ</button>
+          <button class="book" type="submit" aria-label="забронировать">
+            ЗАБРОНИРОВАТЬ
+          </button>
+
           <span class="rait">Рейтинг: 8,5</span>
         </li>
       </ul>
@@ -185,9 +196,13 @@
             <h2>Desert Quail Inn</h2>
           </a>
           <span>Мотель</span>
-          <button class="detailed" type="submit">ПОДРОБНЕЕ</button>
+          <button class="detailed" type="submit" aria-label="подробнее">
+            ПОДРОБНЕЕ
+          </button>
           <span>От 3000 ₽</span>
-          <button class="book" type="submit">ЗАБРОНИРОВАТЬ</button>
+          <button class="book" type="submit" aria-label="забронировать">
+            ЗАБРОНИРОВАТЬ
+          </button>
           <span class="rait">Рейтинг: 8,9</span>
         </li>
       </ul>
@@ -204,9 +219,13 @@
             <h2>Villas at Poco Diablo</h2>
           </a>
           <span>Апартаменты</span>
-          <button class="detailed" type="submit">ПОДРОБНЕЕ</button>
+          <button class="detailed" type="submit" aria-label="подробнее">
+            ПОДРОБНЕЕ
+          </button>
           <span>От 2000 ₽</span>
-          <button class="book" type="submit">ЗАБРОНИРОВАТЬ</button>
+          <button class="book" type="submit" aria-label="забронировать">
+            ЗАБРОНИРОВАТЬ
+          </button>
           <span class="rait">Рейтинг: 9,2</span>
         </li>
       </ul>
@@ -226,6 +245,7 @@
         <section class="socials">
           <a href="#"
             ><img
+              role="img"
               src="images/icons/twitter.svg"
               width="17"
               height="15"
@@ -233,6 +253,7 @@
           /></a>
           <a href="#"
             ><img
+              role="img"
               src="images/icons/fb.svg"
               width="12"
               height="22"
@@ -240,6 +261,7 @@
           /></a>
           <a href="#"
             ><img
+              role="img"
               src="images/icons/youtube.svg"
               width="20"
               height="16"
@@ -249,6 +271,8 @@
         <section class="author">
           <p>Website by</p>
           <svg
+            aria-hidden="true"
+            focusable="false"
             width="115"
             height="34"
             viewBox="0 0 115 34"
