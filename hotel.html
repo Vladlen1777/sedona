@@ -36,63 +36,51 @@
     <form class="features" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="features-list">
         <legend>Инфраструктура:</legend>
+        <input
+          class="visually-hidden features-input-checkbox"
+          type="checkbox"
+          id="pool"
+          checked
+        />
+        <label class="filter-list" for="pool"> Бассейн </label>
 
-        <label class="filter-list" for="pool">
-          <input
-            class="visually-hidden features-input-checkbox"
-            type="checkbox"
-            id="pool"
-            checked
-          />Бассейн
-        </label>
-
-        <label class="filter-list" for="parking">
-          <input
-            class="visually-hidden features-input-checkbox"
-            type="checkbox"
-            id="parking"
-          />Парковка
-        </label>
-
-        <label class="filter-list" for="wi-fi">
-          <input
-            class="visually-hidden features-input-checkbox"
-            type="checkbox"
-            id="wi-fi"
-          />Wi-Fi
-        </label>
+        <input
+          class="visually-hidden features-input-checkbox"
+          type="checkbox"
+          id="parking"
+        />
+        <label class="filter-list" for="parking"> Парковка </label>
+        <input
+          class="visually-hidden features-input-checkbox"
+          type="checkbox"
+          id="wi-fi"
+        />
+        <label class="filter-list" for="wi-fi"> Wi-Fi </label>
       </fieldset>
       <fieldset class="features-list">
         <legend>Тип жилья:</legend>
+        <input
+          class="visually-hidden features-input-checkbox"
+          type="checkbox"
+          id="hotel"
+          checked
+        />
+        <label class="filter-list" for="hotel"> Гостиница </label>
+        <input
+          class="visually-hidden features-input-checkbox"
+          type="checkbox"
+          id="motel"
+          checked
+        />
+        <label class="filter-list" for="motel"> Мотель </label>
 
-        <label class="filter-list" for="hotel">
-          <input
-            class="visually-hidden features-input-checkbox"
-            type="checkbox"
-            id="hotel"
-            checked
-          />Гостиница
-        </label>
-
-        <label class="filter-list" for="motel">
-          <input
-            class="visually-hidden features-input-checkbox"
-            type="checkbox"
-            id="motel"
-            checked
-          />
-          Мотель
-        </label>
-
-        <label class="filter-list" for="appartaments">
-          <input
-            class="visually-hidden features-input-checkbox"
-            type="checkbox"
-            id="appartaments"
-            checked
-          />
-          Апартаменты
-        </label>
+        <input
+          class="visually-hidden features-input-checkbox"
+          type="checkbox"
+          id="appartaments"
+          checked
+        />
+        <label class="filter-list" for="appartaments"> Апартаменты </label>
       </fieldset>
 
       <fieldset class="filter-item">
@@ -106,13 +94,14 @@
             до <input type="text" name="max-price" value="3000" />
           </label>
         </div>
-
-        <div class="scale">
-          <div class="bar"></div>
-        </div>
-        <div class="toggle-wrapper">
-          <div class="toggle toggle-min"></div>
-          <div class="toggle toggle-max"></div>
+        <div class="range">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="toggle-wrapper">
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
         </div>
 
         <button
@@ -126,6 +115,7 @@
     </form>
 
     <section>
+      <h2 class="visually-hidden">Фильтр отелей</h2>
       <ul class="resorts">
         <li class="found">Найдено: 3</li>
         <li class="sort">Сортировка:</li>
@@ -161,7 +151,7 @@
           </svg>
         </div>
       </ul>
-
+      <h2 class="visually-hidden">Список отелей</h2>
       <ul class="hotel">
         <li class="hotel-item">
           <img
@@ -176,16 +166,14 @@
           </a>
 
           <span>Гостиница</span>
-          <span>От 4000 ₽</span>
-          <div class="info">
-            <button class="detailed" type="submit" aria-label="подробнее">
-              ПОДРОБНЕЕ
-            </button>
 
-            <button class="book" type="submit" aria-label="забронировать">
-              ЗАБРОНИРОВАТЬ
-            </button>
-          </div>
+          <button class="detailed" type="submit" aria-label="подробнее">
+            ПОДРОБНЕЕ
+          </button>
+          <span>От 4000 ₽</span>
+          <button class="book" type="submit" aria-label="забронировать">
+            ЗАБРОНИРОВАТЬ
+          </button>
 
           <span class="star"></span>
           <span class="rait">Рейтинг: 8,5</span>
@@ -204,17 +192,16 @@
             <h2>Desert Quail Inn</h2>
           </a>
           <span>Мотель</span>
+
+          <button class="detailed" type="submit" aria-label="подробнее">
+            ПОДРОБНЕЕ
+          </button>
           <span>От 3000 ₽</span>
-          <div class="info">
-            <button class="detailed" type="submit" aria-label="подробнее">
-              ПОДРОБНЕЕ
-            </button>
+          <button class="book" type="submit" aria-label="забронировать">
+            ЗАБРОНИРОВАТЬ
+          </button>
 
-            <button class="book" type="submit" aria-label="забронировать">
-              ЗАБРОНИРОВАТЬ
-            </button>
-          </div>
-
+          <span class="star"></span>
           <span>Рейтинг: 8,9</span>
         </li>
       </ul>
@@ -231,17 +218,16 @@
             <h2>Villas at Poco Diablo</h2>
           </a>
           <span>Апартаменты</span>
+
+          <button class="detailed" type="submit" aria-label="подробнее">
+            ПОДРОБНЕЕ
+          </button>
           <span>От 2000 ₽</span>
-          <div class="info">
-            <button class="detailed" type="submit" aria-label="подробнее">
-              ПОДРОБНЕЕ
-            </button>
+          <button class="book" type="submit" aria-label="забронировать">
+            ЗАБРОНИРОВАТЬ
+          </button>
 
-            <button class="book" type="submit" aria-label="забронировать">
-              ЗАБРОНИРОВАТЬ
-            </button>
-          </div>
-
+          <span class="star"></span>
           <span>Рейтинг: 9,2</span>
         </li>
       </ul>
@@ -259,24 +245,27 @@
           </p>
         </section>
         <section class="socials">
-          <a href="#"
-            ><img
+          <a href="#">
+            <span class="visually-hidden">Твиттер</span>
+            <img
               role="img"
               src="images/icons/twitter.svg"
               width="17"
               height="15"
               alt="Иконка твиттера"
           /></a>
-          <a href="#"
-            ><img
+          <a href="#">
+            <span class="visually-hidden">Фейсбук</span>
+            <img
               role="img"
               src="images/icons/fb.svg"
               width="12"
               height="22"
               alt="Иконка фэйсбука"
           /></a>
-          <a href="#"
-            ><img
+          <a href="#">
+            <span class="visually-hidden">Ютуб</span>
+            <img
               role="img"
               src="images/icons/youtube.svg"
               width="20"

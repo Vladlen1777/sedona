@@ -40,6 +40,7 @@
       </nav>
     </header>
     <main class="container">
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <section class="image">
         <img
           src="images/basic.svg"
@@ -66,6 +67,7 @@
       </section>
 
       <section class="description-1">
+        <h2 class="visually-hidden">Преимущества</h2>
         <div class="description-text">
           <h2>Настоящий<br />городок</h2>
           <p>— №1 —</p>
@@ -268,10 +270,21 @@
             </article>
 
             <section class="people-clearfix">
+              <label class="form-label-adult" for="counter-adult"
+                >ВЗРОСЛЫЕ:</label
+              >
               <article class="counter-adult">
-                <label class="form-label" for="counter-adult">ВЗРОСЛЫЕ:</label>
-
-                <button class="icon-minus" type="button" tabindex="-1"></button>
+                <button class="icon-minus" type="button" tabindex="-1">
+                  <svg
+                    width="12"
+                    height="3"
+                    viewBox="0 0 12 3"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="12" height="3" fill="#A9A9A9" />
+                  </svg>
+                </button>
                 <input
                   class="input-counter"
                   type="text"
@@ -279,12 +292,37 @@
                   id="counter-adult"
                   value="2"
                 />
-                <button class="icon-plus" type="button" tabindex="-1"></button>
+                <button class="icon-plus" type="button" tabindex="-1">
+                  <svg
+                    width="11"
+                    height="11"
+                    viewBox="0 0 11 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                      fill="#A9A9A9"
+                    />
+                  </svg>
+                </button>
               </article>
 
+              <label class="form-label-kids" for="counter-kids">ДЕТИ:</label>
               <article class="counter-kids">
-                <label class="form-label" for="counter-kids">ДЕТИ:</label>
-                <button class="icon-minus" type="button" tabindex="-1"></button>
+                <button class="icon-minus" type="button" tabindex="-1">
+                  <svg
+                    width="12"
+                    height="3"
+                    viewBox="0 0 12 3"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="12" height="3" fill="#A9A9A9" />
+                  </svg>
+                </button>
                 <input
                   class="input-counter"
                   type="text"
@@ -292,7 +330,22 @@
                   id="counter-kids"
                   value="0"
                 />
-                <button class="icon-plus" type="button" tabindex="-1"></button>
+                <button class="icon-plus" type="button" tabindex="-1">
+                  <svg
+                    width="11"
+                    height="11"
+                    viewBox="0 0 11 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                      fill="#A9A9A9"
+                    />
+                  </svg>
+                </button>
               </article>
             </section>
             <button class="search" type="submit" aria-label="найти">
@@ -325,24 +378,27 @@
           </p>
         </section>
         <section class="socials">
-          <a href="#"
-            ><img
+          <a href="#">
+            <span class="visually-hidden">Твиттер</span>
+            <img
               role="img"
               src="images/icons/twitter.svg"
               width="17"
               height="15"
               alt="Иконка твиттера"
           /></a>
-          <a href="#"
-            ><img
+          <a href="#">
+            <span class="visually-hidden">Фейсбук</span>
+            <img
               role="img"
               src="images/icons/fb.svg"
               width="12"
               height="22"
               alt="Иконка фэйсбука"
           /></a>
-          <a href="#"
-            ><img
+          <a href="#">
+            <span class="visually-hidden">Ютуб</span>
+            <img
               role="img"
               src="images/icons/youtube.svg"
               width="20"
