@@ -275,7 +275,8 @@ a {
   font-weight: 700;
   line-height: 26px;
   width: 120px;
-  margin-right: 4px;
+  padding-top: 5px;
+
 }
 
 .form-label-kids {
@@ -283,7 +284,8 @@ a {
   font-weight: 700;
   line-height: 26px;
   width: 120px;
-  margin: 0 20px;
+  padding-left: 70px;
+  padding-top: 5px;
 }
 
 .form-input {
@@ -313,7 +315,8 @@ a {
   width: 114px;
   background: var(--basic-extra-white);
   display: flex;
-  flex: none;
+
+
 }
 
 .counter-kids {
@@ -321,20 +324,20 @@ a {
   width: 114px;
   background: var(--basic-extra-white);
   display: flex;
-  flex: none;
+
 }
 
 .input-counter {
-  height: 26px;
+
   width: 36px;
   text-align: center;
   border: none;
   background: var(--basic-extra-white);
-  padding: 5px 0;
+
 }
 
 .icon-minus {
-  margin-left: 20px;
+ padding-left: 10px;
   border: none;
   background: none;
 }
@@ -353,15 +356,11 @@ a {
   padding: 10px 10px;
 }
 
-.icon-minus svg:hover rect,
-.icon-minus svg:focus rect {
+.icon-minus:hover rect,
+.icon-plus:hover path {
   fill: #000000;
 }
 
-.icon-plus svg:hover path,
-.icon-plus svg:focus path {
-  fill: #000000;
-}
 
 .icon-minus:active rect {
   fill: #81b3d2;
@@ -525,7 +524,7 @@ a {
   top: 1px;
   background-image: url("../images/icons/shape.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 2px -1px;
 }
 
 .visually-hidden {
@@ -593,9 +592,7 @@ a {
   color: #ffffff;
 }
 
-.range {
-  position: relative;
-}
+
 
 .scale {
   height: 2px;
@@ -609,25 +606,26 @@ a {
 }
 
 .toggle {
-  top: 168px;
   width: 4px;
   height: 4px;
-  padding: 0;
   border: 8px solid #ffffff;
   background-color: #a9a9a9;
   border-radius: 50%;
 }
 
 .toggle-wrapper {
-  position: absolute;
+  position: relative;
 }
 
 .toggle-min {
-  left: 800px;
+  position: absolute;
+  top: -10px;
 }
 
 .toggle-max {
-  right: 135px;
+  position: absolute;
+  left: 240px;
+  top: -10px;
 }
 
 .features-button:hover,
@@ -726,23 +724,25 @@ a {
 
 .hotel-item {
   margin-bottom: 30px;
+  margin-top: 30px;
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
-  grid-template-rows: 50px 50px 50px;
+  grid-template-columns: 200px 200px 400px 200px;
+  grid-template-rows: 30px 30px 45px;
 }
 
 .hotel-item img {
   padding-top: 7px;
+  grid-column: 1/2;
+  grid-row: 1/3;
 }
 
 .hotel h2 {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
-  display: flex;
-  padding-left: 30px;
-  margin-bottom: 10px;
-  margin-top: 30px;
+  grid-column: 2/4;
+  grid-row: 1/2;
+  margin: 0 -20px;
 }
 
 .hotel h2:active {
@@ -759,7 +759,9 @@ a {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-light-grey);
-  padding-left: 30px;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  margin: 3px -20px;
 }
 
 .hotel span:last-child {
@@ -770,6 +772,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-column: 4/4;
+  grid-row: 3/3;
+  margin-left: 122px;
+  margin-top: 15px;
 }
 
 .detailed:hover,
@@ -806,6 +812,9 @@ a {
   margin-left: 25px;
   margin-top: 10px;
   border: none;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin: 7px -20px;
 }
 
 .book {
@@ -816,6 +825,9 @@ a {
   color: var(--basic-white);
   background-color: var(--basic-brown);
   border: none;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  margin: 7px -100px;
 }
 
 svg:hover path {
@@ -826,10 +838,36 @@ svg:active path {
   fill: #a9a9a9;
 }
 
-.star::before {
+.star-1::before {
   content: "";
   position: absolute;
   background-image: url("../images/star.svg");
-  left: 300px;
-  right: 300px;
+  background-repeat: repeat-x;
+  width: 55px;
+  margin: -30px 780px;
+  padding: 10px 10px;
+
+}
+
+.star-2::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
+  width: 35px;
+  margin: -30px 795px;
+  padding: 10px 10px;
+
+}
+
+
+.star-3::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
+  width: 15px;
+  margin: -30px 815px;
+  padding: 10px 10px;
+
 }

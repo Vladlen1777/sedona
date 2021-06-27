@@ -29,7 +29,7 @@
           <li><a href="index.html">Информация</a></li>
           <li><a href="foto.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotel.html">Гостиницы</a></li>
+          <li>Гостиницы</li>
         </ul>
       </nav>
     </header>
@@ -99,8 +99,8 @@
             <div class="bar"></div>
           </div>
           <div class="toggle-wrapper">
-            <div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
+            <div class="toggle toggle-min" tabindex="-1"></div>
+            <div class="toggle toggle-max" tabindex="1"></div>
           </div>
         </div>
 
@@ -124,7 +124,7 @@
           <li class="filter-resorts"><a href="#">По типу</a></li>
           <li class="filter-resorts"><a href="#">По рейтингу</a></li>
         </div>
-        <div class="up">
+        <a class="up" href="#">
           <svg
             aria-hidden="true"
             focusable="false"
@@ -136,8 +136,8 @@
           >
             <path d="M5.5 0L0 10H11L5.5 0Z" fill="#a9a9a9" />
           </svg>
-        </div>
-        <div class="down">
+        </a>
+        <a class="down" href="#">
           <svg
             aria-hidden="true"
             focusable="false"
@@ -149,7 +149,7 @@
           >
             <path d="M5.5 10L0 0H11" fill="#a9a9a9" />
           </svg>
-        </div>
+        </a>
       </ul>
       <h2 class="visually-hidden">Список отелей</h2>
       <ul class="hotel">
@@ -175,8 +175,9 @@
             ЗАБРОНИРОВАТЬ
           </button>
 
-          <span class="star"></span>
-          <span class="rait">Рейтинг: 8,5</span>
+          <span class="star-1"></span>
+          <span>Рейтинг: 8,5</span>
+
         </li>
       </ul>
       <ul class="hotel">
@@ -201,8 +202,9 @@
             ЗАБРОНИРОВАТЬ
           </button>
 
-          <span class="star"></span>
+          <span class="star-2"></span>
           <span>Рейтинг: 8,9</span>
+
         </li>
       </ul>
       <ul class="hotel">
@@ -227,7 +229,7 @@
             ЗАБРОНИРОВАТЬ
           </button>
 
-          <span class="star"></span>
+          <span class="star-3"></span>
           <span>Рейтинг: 9,2</span>
         </li>
       </ul>
@@ -275,7 +277,8 @@
         </section>
         <section class="author">
           <p>Website by</p>
-          <svg
+          <a href="#">
+            <svg
             aria-hidden="true"
             focusable="false"
             width="115"
@@ -337,6 +340,7 @@
               </clipPath>
             </defs>
           </svg>
+          </a>
         </section>
       </div>
     </footer>
