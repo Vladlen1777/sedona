@@ -291,6 +291,9 @@ a {
   box-sizing: border-box;
   padding-top: 52px;
 }
+.form-show {
+  display: none;
+}
 
 .form-label {
   font-size: 14px;
@@ -785,24 +788,23 @@ a {
 .filter-resorts {
   font-size: 12px;
   line-height: 18px;
-  color: var(--basic-black);
-  opacity: 0.3;
   padding: 5px 20px;
 }
 
-.filter-resorts a {
-  border-bottom: 1px dashed var(--basic-blue);
-}
-
-.filter-resorts :active {
+.filter-resorts a:active {
   color: var(--basic-black);
+  opacity: 1;
+  border: none;
 }
-
-.filter-resorts :hover,
-.filter-resorts :focus {
+.filter-resorts a:focus {
   color: var(--basic-blue);
+  opacity: 1;
+  border: none;
 }
-
+.filter-resorts a:hover {
+  color: var(--basic-blue);
+  opacity: 1;
+}
 .hotel {
   padding-left: 72px;
   list-style: none;

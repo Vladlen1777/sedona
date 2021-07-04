@@ -234,6 +234,15 @@ a {
   height: 86px;
   border: 0;
 }
+@keyframes clockwise {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
+
 .hotel-form {
   position: absolute;
   height: 395px;
@@ -241,6 +250,11 @@ a {
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   box-sizing: border-box;
   padding-top: 52px;
+  display: none;
+animation-direction: normal;
+}
+.form-show {
+  display: block;
 }
 .form-label {
   width: 120px;
@@ -660,18 +674,20 @@ svg:hover path {
   color: #000;
   opacity: 0.3;
 }
-.filter-resorts a :active {
+.filter-resorts a:active {
   color: var(--basic-black);
+  opacity: 1;
   border: none;
 }
-.filter-resorts :hover {
+.filter-resorts a:focus {
   color: var(--basic-blue);
-}
-.filter-resorts :focus {
-  color: var(--basic-blue);
+  opacity: 1;
   border: none;
 }
-
+.filter-resorts a:hover {
+  color: var(--basic-blue);
+  opacity: 1;
+}
 .hotel h2:focus,
 .hotel h2:hover {
   color: var(--basic-blue);

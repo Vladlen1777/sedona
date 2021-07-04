@@ -27,7 +27,7 @@
         </a>
 
         <ul class="site-navigation">
-          <li><a href="index.html">Информация</a></li>
+          <li><a href="#">Информация</a></li>
           <li><a href="foto.html">Фото и видео</a></li>
           <li>
             <a
@@ -251,7 +251,7 @@
         >
           ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
         </button>
-        <section class="hotel-form">
+        <section class="hotel-form form-show">
           <form class="form" action="/search" method="POST">
             <div class="date">
               <label class="form-label" for="check-in">ДАТА ЗАЕЗДА:</label>
@@ -459,7 +459,7 @@
         </section>
         <section class="author">
           <p>Website by</p>
-          <a href="#">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -528,9 +528,9 @@
     </footer>
     <script>
       const button = document.querySelector(".button");
-      const popup = document.querySelector(".hotel-form");
+      const popup = document.querySelector(".form-show");
       button.addEventListener("click", function () {
-        popup.classList.toggle("hotel-form");
+        popup.classList.toggle("form-show");
       });
     </script>
   </body>
