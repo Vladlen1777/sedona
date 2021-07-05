@@ -234,15 +234,6 @@ a {
   height: 86px;
   border: 0;
 }
-@keyframes clockwise {
-  0% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(-40px);
-  }
-}
-
 .hotel-form {
   position: absolute;
   height: 395px;
@@ -250,11 +241,9 @@ a {
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   box-sizing: border-box;
   padding-top: 52px;
-  display: none;
-animation-direction: normal;
 }
 .form-show {
-  display: block;
+  display: none;
 }
 .form-label {
   width: 120px;
