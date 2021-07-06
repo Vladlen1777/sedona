@@ -11,6 +11,7 @@
 
 .page {
   height: 100%;
+  background: #f2f2f2;
 }
 
 .page-body {
@@ -19,6 +20,8 @@
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   position: relative;
+  box-shadow: 0px 5px 15px
+  rgba(0, 1, 1, 0.2);
 }
 
 body {
@@ -65,6 +68,9 @@ a {
 
 .site-navigation a {
   color: var(--basic-black);
+}
+.site-navigation li {
+  color: #766357;
 }
 
 .state-map {
@@ -745,10 +751,9 @@ a {
   padding-bottom: 30px;
 }
 
-.current {
+.sorting-type {
   display: flex;
   position: relative;
-  margin-left: -32px;
 }
 
 .found {
@@ -761,8 +766,7 @@ a {
   font-size: 12px;
   line-height: 18px;
   padding-left: 46px;
-  padding-top: 5px;
-  padding-right: 45px;
+  padding-right: 16px;
 }
 
 .up {
@@ -790,13 +794,17 @@ a {
   line-height: 18px;
   padding: 5px 20px;
 }
-
-.filter-resorts a:active {
+.filter-resorts a {
+  border-bottom: 1px dashed var(--basic-blue);
+  color: #000;
+  opacity: 0.3;
+}
+.filter-resorts a:focus {
   color: var(--basic-black);
   opacity: 1;
   border: none;
 }
-.filter-resorts a:focus {
+.filter-resorts-current a {
   color: var(--basic-blue);
   opacity: 1;
   border: none;
