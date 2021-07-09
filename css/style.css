@@ -112,8 +112,8 @@ a {
   text-align: center;
   color: var(--basic-black);
   list-style: none;
-  margin-right: 60px;
-  margin-left: 50px;
+  margin-right: 64px;
+  margin-left: 66px;
 }
 
 .slogan p {
@@ -124,8 +124,8 @@ a {
   list-style: none;
   margin-bottom: 51px;
   padding-right: 64px;
-  padding-top: 25px;
-  margin-left: 50px;
+  padding-top: 28px;
+  margin-left: 66px;
 }
 
 .description-1 {
@@ -138,8 +138,9 @@ a {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-white);
-  margin-bottom: 25px;
-  margin-top: 0;
+  margin-bottom: 28px;
+  margin-top: -6px;
+  margin-left: 10px;
 }
 
 .description-2 {
@@ -178,14 +179,15 @@ a {
   width: 400px;
   text-align: center;
   color: var(--basic-white);
-  padding-top: 54px;
+  padding-top: 50px;
   padding-right: 3px;
   box-sizing: border-box;
   margin: -15px 0;
 }
 
 .description-text-1 p {
-  margin-bottom: 23px;
+  margin-bottom: 28px;
+  margin-left: 12px;
 }
 
 .description-text-2 p {
@@ -202,9 +204,9 @@ a {
   display: grid;
   grid-template-columns: 254px 297px 269px;
   grid-gap: 124px;
-  margin: 0 70px;
+  margin: 0 68px;
   list-style: none;
-  padding: 0;
+  padding: 2px 0;
 }
 
 .advantages-grey {
@@ -217,13 +219,12 @@ a {
   width: 1200px;
   height: 212px;
   margin-left: 0;
-  padding: 20px 0px;
+  padding: 23px 0px;
   justify-content: center;
 }
 
 .advantages-item {
   text-align: center;
-  padding-top: 6px;
 }
 
 .advantages-item h2 {
@@ -238,6 +239,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-light-grey);
+  padding-left: 2px;
 }
 
 .paragraph {
@@ -253,7 +255,7 @@ a {
   font-size: 30px;
   line-height: 24px;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-right: 10px;
 }
 
@@ -262,7 +264,7 @@ a {
   line-height: 24px;
   text-align: center;
   margin-bottom: 45px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .button:hover,
@@ -363,7 +365,7 @@ a {
   height: 38px;
   background: var(--basic-extra-white);
   display: flex;
-  margin-left: -10px;
+  margin-left: -15px;
 }
 
 .input-counter {
@@ -602,7 +604,30 @@ a {
   background-image: url(../images/checkbox.svg);
   background-repeat: no-repeat;
 }
-
+.features-input-checkbox:disabled + .filter-list-1::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  top: 1px;
+  background-image: url(../images/checkbox-grey.svg);
+  background-repeat: no-repeat;
+}
+.features-input-checkbox:disabled + .filter-list-2::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  top: 1px;
+  background-image: url(../images/checkbox-grey.svg);
+  background-repeat: no-repeat;
+}
+.features-input-checkbox:disabled + .filter-list-1::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  top: 1px;
+  background-image: url(../images/checkbox-grey.svg);
+  background-repeat: no-repeat;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -667,11 +692,9 @@ a {
 }
 .min-price {
   padding-left: 23px;
-  padding-top: 8px;
   color: #fff;
 }
 .max-price {
-  padding-top: 8px;
   color: #fff;
 }
 .range {
@@ -800,7 +823,7 @@ a {
   opacity: 0.3;
 }
 .filter-resorts a:focus {
-  color: var(--basic-black);
+  color: var(--basic-blue);
   opacity: 1;
   border: none;
 }
@@ -812,6 +835,10 @@ a {
 .filter-resorts a:hover {
   color: var(--basic-blue);
   opacity: 1;
+}
+.sorting-type a
+:active {
+  color: var(--basic-black);
 }
 .hotel {
   padding-left: 72px;
@@ -857,7 +884,7 @@ a {
   color: var(--basic-light-grey);
   grid-column: 2/4;
   grid-row: 2/3;
-  margin: 8px 0px;
+  margin: 8px 5px;
 }
 
 .price-1 {

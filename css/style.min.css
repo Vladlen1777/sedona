@@ -252,7 +252,7 @@ a {
   padding-top: 52px;
 }
 .form-show {
-  display: none;
+ display: none;
 }
 .form-label,
 .form-label-item {
@@ -652,9 +652,12 @@ svg:hover path {
   opacity: 0.3;
 }
 .filter-resorts a:focus {
-  color: var(--basic-black);
+  color: var(--basic-blue);
   opacity: 1;
   border: 0;
+}
+.filter-resorts a:active {
+  color: black;
 }
 .filter-resorts-current a {
   border: 0;
