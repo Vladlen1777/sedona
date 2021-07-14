@@ -10,12 +10,12 @@
 }
 .page {
   height: 100%;
+  overflow-x: hidden;
   background: #f2f2f2;
 }
 .page-body {
   min-height: 100%;
   display: grid;
-  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   position: relative;
@@ -64,14 +64,6 @@ a {
 }
 .site-navigation li {
   color: #766357;
-}
-.navi,
-.navi-2 {
-  width: 50%;
-  float: left;
-}
-.navi-2 {
-  float: right;
 }
 .state-map {
   margin-left: 275px;
@@ -136,7 +128,6 @@ a {
 .description-1,
 .description-2 {
   display: grid;
-  grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
 }
 .advantages-item h2,
@@ -516,14 +507,8 @@ a {
   border-radius: 3px;
   margin: 0 22px;
 }
-.features-input-checkbox:checked:disabled + .filter-list-1::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  background-image: url(../images/checkbox-grey.svg);
-  background-repeat: no-repeat;
-}
-.features-input-checkbox::checked:disabled + .filter-list-2::before {
+.features-input-checkbox:checked:disabled + .filter-list-1::before,
+.features-input-checkbox:checked:disabled + .filter-list-2::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -539,10 +524,9 @@ a {
   height: 23px;
   background-image: url(../images/checkbox-bgrey.svg);
   border-radius: 3px;
-  margin: -4px -15px;
 }
 .features-input-checkbox:disabled + .filter-list-2::before {
-  margin: -4px 20px;
+  width: 30px;
 }
 .visually-hidden {
   position: absolute;
@@ -552,7 +536,6 @@ a {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -731,7 +714,7 @@ svg:hover path {
 .hotel-item {
   margin-bottom: 30px;
   display: grid;
-  grid-template-columns: 160px 270px 516px;
+  grid-template-columns: 160px 120px 666px;
   grid-template-rows: 30px 30px 45px;
 }
 .hotel-item img {
@@ -742,6 +725,7 @@ svg:hover path {
 .hotel h2 {
   font-size: 21px;
   line-height: 26px;
+  width: 300px;
   color: var(--basic-black);
   grid-column: 2/4;
   grid-row: 1/2;
@@ -757,8 +741,9 @@ svg:hover path {
   margin: 8px 5px;
 }
 .price-1 {
+  grid-column: 3/4;
   width: 70px;
-  margin: 10px 120px;
+  margin: 10px 0;
 }
 .rait {
   height: 27px;
@@ -801,19 +786,19 @@ svg:hover path {
   line-height: 21px;
   color: var(--basic-white);
   border: 0;
-  grid-column: 2/3;
   grid-row: 3/4;
 }
 .detailed {
   width: 110px;
   background-color: var(--basic-blue);
+  grid-column: 2/3;
   margin: 15px 4px;
 }
 .book {
   width: 142px;
   background-color: var(--basic-brown);
+  grid-column: 3/4;
   margin-top: 15px;
-  margin-left: 120px;
 }
 svg:active path {
   fill: #a9a9a9;
