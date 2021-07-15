@@ -72,9 +72,6 @@ a {
 .site-navigation li {
   color: #766357;
 }
-.state-map {
-  margin-left: 275px;
-}
 
 .site-navigation a:active {
   color: var(--basic-black);
@@ -662,6 +659,7 @@ a {
   line-height: 21px;
   color: #ffffff;
   padding-left: 4px;
+  cursor: pointer;
 }
 
 .price-controls {
@@ -984,38 +982,38 @@ svg:active path {
 .star-4 {
   content: "";
   background-image: url("../images/star.svg");
-  background-repeat: repeat-x;
-  width: 75px;
+  background-repeat: space;
+  width: 90px;
   grid-column: 4/4;
 }
 
 .star-3 {
   content: "";
   background-image: url("../images/star.svg");
-  background-repeat: repeat-x;
-  width: 55px;
+  background-repeat: space;
+  width: 65px;
   grid-column: 4/4;
 }
 
 .star-2 {
   content: "";
   background-image: url("../images/star.svg");
-  background-repeat: repeat-x;
-  width: 35px;
+  background-repeat: space;
+  width: 40px;
   grid-column: 4/4;
 }
 
 .star-4 {
   margin-top: 10px;
-  margin-left: 35px;
+  margin-left: 20px;
 }
 
 .star-3 {
   margin-top: 10px;
-  margin-left: 52px;
+  margin-left: 45px;
 }
 
 .star-2 {
   margin-top: 10px;
-  margin-left: 70px;
+  margin-left: 69px;
 }
