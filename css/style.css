@@ -93,7 +93,7 @@ a {
 }
 
 .image svg {
-  margin-bottom: -3px;
+  margin-bottom: -5px;
   pointer-events: none;
 }
 
@@ -108,7 +108,7 @@ a {
   text-align: center;
   color: var(--basic-black);
   list-style: none;
-  margin-right: 64px;
+  margin-right: 70px;
   margin-left: 66px;
 }
 
@@ -119,7 +119,7 @@ a {
   color: var(--basic-light-grey);
   list-style: none;
   margin-bottom: 51px;
-  padding-right: 64px;
+  padding-right: 70px;
   padding-top: 28px;
   margin-left: 66px;
 }
@@ -127,7 +127,7 @@ a {
 .description-1 {
   display: grid;
   grid-template-columns: min-content 1fr;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .description-1 h2 {
@@ -165,7 +165,7 @@ a {
   text-align: center;
   color: var(--basic-white);
   padding-top: 54px;
-  padding-right: 3px;
+  padding-right: 14px;
   box-sizing: border-box;
 }
 
@@ -182,14 +182,19 @@ a {
 }
 
 .description-text-1 p {
-  margin-bottom: 28px;
-  margin-left: 12px;
+  margin-bottom: 27px;
+  width: 306px;
+  line-height: 18px;
+  font-size: 14px;
+  margin-left: 47px;
 }
 
 .description-text-2 p {
-  margin-bottom: 23px;
-  width: 350px;
-  margin-left: 26px;
+  margin-bottom: 26px;
+  width: 321px;
+  line-height: 21px;
+  font-size: 14px;
+  margin-left: 40px;
 }
 
 .advantages {
@@ -229,6 +234,7 @@ a {
   color: var(--basic-black);
   margin-bottom: 25px;
   padding-left: 10px;
+  padding-top: 6px;
 }
 
 .advantages-item p {
@@ -236,6 +242,9 @@ a {
   line-height: 21px;
   color: var(--basic-light-grey);
   padding-left: 2px;
+}
+.souvenirs {
+  width: 300px;
 }
 
 .paragraph {
@@ -252,7 +261,7 @@ a {
   line-height: 24px;
   text-align: center;
   padding-top: 20px;
-  padding-right: 10px;
+  padding-right: 14px;
 }
 
 .snippet p {
@@ -260,7 +269,8 @@ a {
   line-height: 24px;
   text-align: center;
   margin-bottom: 45px;
-  padding-top: 5px;
+  padding-top: 10px;
+  padding-right: 5px;
 }
 
 .button:hover,
@@ -279,7 +289,7 @@ a {
   line-height: 26px;
   color: var(--basic-white);
   background-color: var(--basic-brown);
-  margin-left: 320px;
+  margin-left: 315px;
   width: 568px;
   height: 86px;
   border: none;
@@ -291,9 +301,9 @@ a {
   width: 568px;
   background: #ffffff;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-  margin-left: 320px;
+  margin-left: 315px;
   box-sizing: border-box;
-  padding-top: 52px;
+  padding-top: 50px;
 }
 .form-show {
   display: none;
@@ -311,7 +321,7 @@ a {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
-  padding: 6px 54px;
+  padding: 6px 56px;
 }
 
 .form-input-1 {
@@ -357,15 +367,22 @@ a {
   display: flex;
 }
 
-.counter-item {
+.counter-item-adult {
   height: 38px;
   background: var(--basic-extra-white);
   display: flex;
   margin-left: -15px;
 }
+.counter-item-child {
+  height: 38px;
+  background: var(--basic-extra-white);
+  display: flex;
+  margin-left: -26px;
+}
 
 .input-counter {
   width: 50px;
+  padding-top: 10px;
   text-align: center;
   border: none;
   background: var(--basic-extra-white);
@@ -453,7 +470,7 @@ a {
 .contacts-2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: -18px 0;
+  margin: -17px 0;
 }
 
 .visit a {
@@ -479,7 +496,9 @@ a {
 }
 
 .author p {
-  margin: 5px 15px;
+  margin: 1px 22px;
+  font-size: 14px;
+  line-height: 26px;
   color: var(--basic-black);
 }
 
@@ -518,7 +537,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 }
 
 .features-list-1 {
@@ -798,12 +817,12 @@ a {
 
 .up {
   margin-left: 474px;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .down {
   margin-left: 12px;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .up:hover path,
@@ -861,7 +880,7 @@ a {
 .hotel-item img {
   grid-column: 1/2;
   grid-row: 1/3;
-  padding-top: 10px;
+  padding-top: 14px;
 }
 
 .hotel h2 {
@@ -871,7 +890,7 @@ a {
   color: var(--basic-black);
   grid-column: 2/4;
   grid-row: 1/2;
-  margin: 4px;
+  margin: 7px;
 }
 
 .hotel h2:active {
@@ -890,7 +909,7 @@ a {
   color: var(--basic-light-grey);
   grid-column: 2/3;
   grid-row: 2/3;
-  margin: 8px 5px;
+  margin: 11px 5px;
 }
 
 .price-1 {
@@ -914,7 +933,7 @@ a {
   grid-column: 4/4;
   grid-row: 3/3;
   font-size: 14px;
-  margin: 16px 0px;
+  margin: 17px 0px;
 }
 
 .detailed:hover,
@@ -950,11 +969,10 @@ a {
   color: var(--basic-white);
   background-color: var(--basic-blue);
   margin-left: 25px;
-  margin-top: 10px;
   border: none;
   grid-column: 2/3;
   grid-row: 3/4;
-  margin: 15px 4px;
+  margin: 17px 4px;
 }
 
 .book {
@@ -968,7 +986,7 @@ a {
   border: none;
   grid-column: 3/4;
   grid-row: 3/4;
-  margin-top: 15px;
+  margin-top: 17px;
 }
 
 svg:hover path {
@@ -1004,16 +1022,16 @@ svg:active path {
 }
 
 .star-4 {
-  margin-top: 10px;
+  margin-top: 14px;
   margin-left: 20px;
 }
 
 .star-3 {
-  margin-top: 10px;
+  margin-top: 14px;
   margin-left: 45px;
 }
 
 .star-2 {
-  margin-top: 10px;
+  margin-top: 14px;
   margin-left: 69px;
 }
