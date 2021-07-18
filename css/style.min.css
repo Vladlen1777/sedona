@@ -57,13 +57,26 @@ a {
   justify-content: space-between;
   width: 100%;
   list-style: none;
-  padding: 0 72px;
+  padding: 0;
 }
 .site-navigation a {
   color: var(--basic-black);
 }
-.site-navigation li {
-  color: #766357;
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+  text-align: left;
+  width: 25%;
+}
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
+  width: 25%;
+}
+.info {
+  padding-left: 72px;
+}
+.hostel {
+  padding: 0 72px;
 }
 .hotel h2:active,
 .site-navigation a:active {
@@ -200,24 +213,39 @@ a {
 }
 .advantages-item h2 {
   color: var(--basic-black);
-  padding-left: 10px;
+  padding-left: 14px;
   padding-top: 6px;
 }
 .advantages-item p {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-light-grey);
-  padding-left: 2px;
 }
 .souvenirs {
-  width: 300px;
+  width: 270px;
 }
-.paragraph {
+.tourists {
+  width: 241px;
+}
+.number-3 {
+  padding-left: 10px;
+}
+.number-4 {
+  padding-left: 14px;
+}
+.paragraph-3 {
+  padding-left: 12px;
   padding-top: 10px;
 }
-.number,
-.paragraph {
-  padding-left: 20px;
+.paragraph-4,
+.paragraph-5 {
+  width: 277px;
+  padding-left: 17px;
+  padding-top: 10px;
+}
+.paragraph-5 {
+  width: 253px;
+  padding-left: 8px;
 }
 .snippet h2,
 .snippet p {
@@ -254,8 +282,10 @@ a {
   font-weight: 700;
   line-height: 26px;
   background-color: var(--basic-brown);
-  height: 86px;
+  height: 56px;
+  padding-top: 30px;
   border: 0;
+  text-align: center;
 }
 .hotel-form {
   position: absolute;
@@ -266,7 +296,7 @@ a {
   padding-top: 50px;
 }
 .form-show {
-  display: none;
+  display: block;
 }
 .form-label,
 .form-label-item {
@@ -392,14 +422,14 @@ a {
 .contacts-1,
 .contacts-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 518px 304px 387px;
 }
 .contacts-1 {
   background: rgba(255, 255, 255, 0.9);
   height: 122px;
 }
 .contacts-2 {
-  margin: -17px 0;
+  margin-top: -15px;
 }
 .author p,
 .visit a,
@@ -417,24 +447,27 @@ a {
 .visit p {
   font-weight: 700;
   font-size: 21px;
-  margin-bottom: -8px;
-  margin-left: 72px;
-  margin-top: 20px;
+  margin-bottom: -11px;
+  margin-right: 44px;
+  margin-top: 21px;
 }
 .author {
   display: flex;
-  padding: 44px 42px;
+  padding: 44px 15px;
 }
 .author p {
-  margin: 1px 22px;
+  margin: 1px 26px;
   font-size: 14px;
 }
-.socials,
-.socials a {
+.author a {
+  margin: 0 -8px;
+}
+.socials {
   display: flex;
-  margin: 0 auto;
+  margin-top: 0;
 }
 .socials a {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -679,6 +712,7 @@ a {
 .up {
   margin-left: 474px;
   padding-top: 7px;
+  cursor: pointer;
 }
 .down {
   margin-left: 12px;
@@ -794,13 +828,15 @@ svg:hover path {
 }
 .book,
 .detailed {
-  height: 29px;
+  height: 25px;
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
   color: var(--basic-white);
   border: 0;
   grid-row: 3/4;
+  padding-top: 4px;
+  text-align: center;
 }
 .detailed {
   width: 110px;

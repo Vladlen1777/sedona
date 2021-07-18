@@ -69,9 +69,7 @@ a {
 .site-navigation a {
   color: var(--basic-black);
 }
-.site-navigation li {
-  color: #766357;
-}
+
 .site-navigation li:nth-child(1),
 .site-navigation li:nth-child(2) {
   text-align: left;
@@ -81,6 +79,12 @@ a {
 .site-navigation li:nth-child(4) {
   text-align: right;
   width: 25%;
+}
+.info {
+  padding-left: 72px;
+}
+.hostel {
+  padding: 0 72px;
 }
 
 .site-navigation a:active {
@@ -331,7 +335,7 @@ a {
   padding-top: 50px;
 }
 .form-show {
-  display: none;
+  display: block;
 }
 
 .form-label {
@@ -488,14 +492,14 @@ a {
 
 .contacts-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 518px 304px 387px;
   background: rgba(255, 255, 255, 0.9);
   height: 122px;
 }
 .contacts-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: -17px 0;
+  grid-template-columns: 518px 304px 387px;
+  margin-top: -15px;
 }
 
 .visit a {
@@ -507,29 +511,31 @@ a {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  margin-top: 0;
-  margin-bottom: -8px;
-  margin-left: 72px;
+  margin-bottom: -11px;
+  margin-right: 44px;
   text-decoration: none;
   color: var(--basic-black);
-  margin-top: 20px;
+  margin-top: 21px;
 }
 
 .author {
   display: flex;
-  padding: 44px 42px;
+  padding: 44px 15px;
 }
 
 .author p {
-  margin: 1px 22px;
+  margin: 1px 26px;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
 }
+.author a {
+  margin: 0 -8px;
+}
 
 .socials {
   display: flex;
-  margin: 0 auto;
+  margin-top: 0px;
 }
 
 .socials a {
@@ -843,11 +849,13 @@ a {
 .up {
   margin-left: 474px;
   padding-top: 7px;
+  cursor: pointer;
 }
 
 .down {
   margin-left: 12px;
   padding-top: 7px;
+  cursor: pointer;
 }
 
 .up:hover path,
