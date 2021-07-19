@@ -312,6 +312,8 @@ a {
 }
 
 .button {
+  display: flex;
+  flex-direction: column;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -420,11 +422,13 @@ a {
 .icon-minus {
   padding: 0 8px;
   border: none;
+  background: none;
 }
 
 .icon-plus {
   border: none;
   padding: 0 8px;
+  background: none;
 }
 
 .icon-minus svg {
@@ -492,14 +496,14 @@ a {
 
 .contacts-1 {
   display: grid;
-  grid-template-columns: 518px 304px 387px;
+  grid-template-columns: 400px 400px 400px;
   background: rgba(255, 255, 255, 0.9);
   height: 122px;
 }
 .contacts-2 {
   display: grid;
-  grid-template-columns: 518px 304px 387px;
-  margin-top: -15px;
+  grid-template-columns: 400px 400px 400px;
+  margin-top: -17px;
 }
 
 .visit a {
@@ -512,7 +516,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   margin-bottom: -11px;
-  margin-right: 44px;
+  margin-left: 70px;
   text-decoration: none;
   color: var(--basic-black);
   margin-top: 21px;
@@ -520,7 +524,7 @@ a {
 
 .author {
   display: flex;
-  padding: 44px 15px;
+  padding: 44px 37px;
 }
 
 .author p {
@@ -535,7 +539,7 @@ a {
 
 .socials {
   display: flex;
-  margin-top: 0px;
+  margin: 0 auto;
 }
 
 .socials a {
@@ -569,6 +573,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 27px;
+  width: 1200px;
+  height: 222px;
 }
 
 .features-list-1 {
@@ -788,6 +794,7 @@ a {
 
 .toggle-wrapper {
   position: relative;
+  cursor: pointer;
 }
 
 .toggle-min {

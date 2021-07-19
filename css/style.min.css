@@ -16,6 +16,7 @@
 .page-body {
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   position: relative;
@@ -138,6 +139,7 @@ a {
 .description-1,
 .description-2 {
   display: grid;
+  grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
 }
 .advantages-item h2,
@@ -278,6 +280,8 @@ a {
   color: var(--basic-white);
 }
 .button {
+  display: flex;
+  flex-direction: column;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -363,6 +367,7 @@ a {
 .icon-plus {
   border: 0;
   padding: 0 8px;
+  background: 0 0;
 }
 .icon-minus svg {
   padding: 3px 0;
@@ -422,14 +427,14 @@ a {
 .contacts-1,
 .contacts-2 {
   display: grid;
-  grid-template-columns: 518px 304px 387px;
+  grid-template-columns: 400px 400px 400px;
 }
 .contacts-1 {
   background: rgba(255, 255, 255, 0.9);
   height: 122px;
 }
 .contacts-2 {
-  margin-top: -15px;
+  margin-top: -17px;
 }
 .author p,
 .visit a,
@@ -448,12 +453,12 @@ a {
   font-weight: 700;
   font-size: 21px;
   margin-bottom: -11px;
-  margin-right: 44px;
+  margin-left: 70px;
   margin-top: 21px;
 }
 .author {
   display: flex;
-  padding: 44px 15px;
+  padding: 44px 37px;
 }
 .author p {
   margin: 1px 26px;
@@ -462,12 +467,12 @@ a {
 .author a {
   margin: 0 -8px;
 }
-.socials {
-  display: flex;
-  margin-top: 0;
-}
+.socials,
 .socials a {
   display: flex;
+  margin: 0 auto;
+}
+.socials a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -494,6 +499,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 27px;
+  width: 1200px;
+  height: 222px;
 }
 .features-list-1,
 .features-list-2 {
@@ -582,6 +589,7 @@ a {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -660,6 +668,7 @@ a {
 }
 .toggle-wrapper {
   position: relative;
+  cursor: pointer;
 }
 .toggle-max,
 .toggle-min {
